@@ -1,0 +1,23 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+button {
+    border: 1px solid;
+    border-color: white;
+    padding: 0.5em;
+}
+
+@media not screen, (prefers-color-scheme: light) {
+    * {
+        background-color: white;
+        color: black;
+    }
+
+    button {
+        border-color: black;
+    }
+}
