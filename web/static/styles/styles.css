@@ -11,6 +11,11 @@ button {
     padding: 0.75rem;
 }
 
+button:disabled {
+    color: #888;
+    border-color: #888;
+}
+
 @media not screen, (prefers-color-scheme: light) {
     * {
         background-color: white;
