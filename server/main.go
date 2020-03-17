@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"html/template"
+	"log"
+)
+
+var templates = template.Must(template.ParseFiles("web/templates/index.html"))
 
 func main() {
-	fmt.Println("hello")
+	log.Println("template successfully parsed")
 }
