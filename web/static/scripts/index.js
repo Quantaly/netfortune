@@ -13,6 +13,6 @@ button.addEventListener("click", function () {
 });
 document.body.appendChild(button);
 
-/*if ("serviceWorker" in navigator) {
+if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("static/scripts/sw.js");
-}*/
+}
