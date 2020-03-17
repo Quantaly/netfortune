@@ -3,7 +3,7 @@ FROM golang:1.14-buster AS build
 WORKDIR /app
 
 RUN apt update && \
-    apt -y install fortune-mod fortunes && \
+    apt -y --no-install-recommends install fortunes-min fortunes && \
     rm -rf /var/lib/apt/lists/*
 
 COPY setup setup
